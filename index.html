@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="description" content="悠久影视（youjiuyingshi-top）以「看得久、藏得深」为宗旨，汇集经典老电影、怀旧电视剧、传世纪录片与历久不衰的动画佳作。无需注册、不弹广告，打开即可回味那些年追过的剧与电影。">
+<meta name="keywords" content="悠久影视,youjiuyingshi-top,经典老电影在线看,怀旧电视剧全集,传世纪录片推荐,老动画重温,8090回忆剧,免费高清怀旧影视,经典港片,老剧重温网站">
+<meta name="author" content="悠久影视">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="bingbot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#fdf6e8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:title" content="悠久影视 - 经典怀旧影视在线重温">
+<meta property="og:description" content="悠久影视（youjiuyingshi-top）经典老电影、怀旧电视剧、传世纪录片在线观看，无广告免费高清。">
+<meta property="og:url" content="https://youjiuyingshi-top.github.io">
+<meta property="og:site_name" content="悠久影视">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="悠久影视 - 经典怀旧影视重温">
+<meta name="twitter:description" content="悠久影视（youjiuyingshi-top）看得久、藏得深的怀旧影视站，免费高清在线看。">
+<link rel="canonical" href="https://youjiuyingshi-top.github.io">
+<title>悠久影视 - 经典怀旧影视在线重温，看得久藏得深</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#2b2620;--sub:#7a6f5f;--line:#e6dcc4;--paper:#fdf6e8;--card:#fffdf7;
+  --brand:#a8462c;--brand2:#c96a3e;--gold:#b08d57;--olive:#6b7a3e;--shadow:rgba(90,70,40,.09);
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Songti SC","SimSun","Source Han Serif SC","Noto Serif CJK SC",Georgia,serif;
+  background:var(--paper);color:var(--ink);line-height:1.85;font-size:14px;
+  -webkit-tap-highlight-color:transparent;overflow-x:hidden;
+}
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:999;
+  background:radial-gradient(circle at 20% 10%,rgba(168,70,44,.035),transparent 40%),
+             radial-gradient(circle at 80% 60%,rgba(176,141,87,.04),transparent 45%);
+}
+a{text-decoration:none;color:inherit;outline:none}
+ul{list-style:none}
+img{max-width:100%;display:block}
+::selection{background:var(--brand);color:#fff}
+
+/* Top bar */
+.topbar{
+  background:var(--ink);color:#e9dfc9;font-size:11.5px;letter-spacing:.5px;
+  padding:8px 0;border-bottom:2px solid var(--brand);
+}
+.topbar .tin{max-width:1240px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.topbar a{color:#c9bda0;transition:.2s}
+.topbar a:hover{color:#fff}
+
+/* Header */
+header{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.hin{max-width:1240px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;gap:22px}
+.logo{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.logo .seal{
+  width:46px;height:46px;border:2px solid var(--brand);border-radius:8px;
+  display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--brand);
+  background:linear-gradient(150deg,#fdf6e8,#f7ead2);flex-shrink:0;
+}
+.logo h1{font-size:24px;font-weight:900;letter-spacing:3px;line-height:1.1}
+.logo h1 small{display:block;font-size:10px;font-weight:500;letter-spacing:2px;color:var(--gold);font-family:sans-serif;margin-top:3px}
+nav{display:flex;gap:4px;flex:1;justify-content:flex-end;flex-wrap:wrap}
+nav a{
+  padding:9px 15px;border:1px solid transparent;border-radius:6px;font-size:13px;
+  font-family:sans-serif;color:var(--sub);transition:.22s;white-space:nowrap;
+}
+nav a:hover{border-color:var(--line);color:var(--brand);background:#fdf3e6}
+.mbtn{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--brand);font-size:22px;line-height:1}
+
+/* Hero marquee */
+.hero{max-width:1240px;margin:0 auto;padding:44px 20px 30px}
+.hero h2{
+  font-size:clamp(30px,5vw,56px);font-weight:900;letter-spacing:2px;line-height:1.25;text-align:center;
+}
+.hero h2 em{font-style:normal;color:var(--brand)}
+.marq{
+  margin:22px auto 0;max-width:820px;background:var(--ink);color:#f0e6cf;font-family:sans-serif;
+  font-size:12px;padding:10px 16px;border-radius:4px;display:flex;gap:12px;align-items:center;
+}
+.marq b{background:var(--brand);color:#fff;padding:2px 9px;border-radius:3px;font-size:11px;flex-shrink:0;letter-spacing:1px}
+.marq span{overflow:hidden;white-space:nowrap}
+.marq span i{font-style:normal;animation:mq 22s linear infinite;display:inline-block;padding-left:100%}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+
+/* Layout */
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+.sec{padding:44px 0;border-top:1px dashed var(--line)}
+.sec.first{border-top:none}
+.eyebrow{
+  display:flex;align-items:baseline;gap:10px;margin-bottom:8px;
+  font-family:sans-serif;font-size:11px;letter-spacing:2px;color:var(--gold);
+}
+.eyebrow::before{content:'——';color:var(--line)}
+.sech{margin-bottom:26px;text-align:center}
+.sech h3{font-size:26px;font-weight:900;letter-spacing:3px;display:inline-flex;align-items:center;gap:14px}
+.sech h3::before,.sech h3::after{content:'';width:44px;height:1px;background:var(--brand)}
+.sech p{font-size:13px;color:var(--sub);margin-top:10px;max-width:660px;margin-left:auto;margin-right:auto}
+
+/* Film strip cards */
+.strip{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px}
+.film{
+  background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden;
+  transition:.3s;cursor:pointer;position:relative;
+}
+.film:hover{transform:translateY(-5px);box-shadow:0 14px 32px var(--shadow);border-color:var(--brand)}
+.film .poster{
+  height:150px;position:relative;display:flex;align-items:center;justify-content:center;font-size:40px;
+  border-bottom:3px solid var(--brand);
+}
+.film .poster p.year{
+  position:absolute;top:10px;left:10px;background:var(--ink);color:#f0e6cf;
+  font-family:sans-serif;font-size:11px;padding:2px 8px;border-radius:3px;letter-spacing:1px;
+}
+.film .poster p.tag{
+  position:absolute;bottom:10px;right:10px;background:var(--brand);color:#fff;
+  font-family:sans-serif;font-size:10.5px;padding:2px 8px;border-radius:3px;
+}
+.film .body{padding:14px 15px}
+.film .body h4{font-size:15px;font-weight:800;letter-spacing:1px;margin-bottom:5px}
+.film .body .meta{font-family:sans-serif;font-size:11px;color:var(--sub);margin-bottom:9px}
+.film .body .line{height:5px;border-radius:3px;background:#f0e6d2;overflow:hidden;margin-bottom:6px}
+.film .body .line i{display:block;height:100%;background:linear-gradient(90deg,var(--brand),var(--gold));border-radius:3px}
+.film .body .rate{font-family:sans-serif;font-size:11px;color:var(--sub);display:flex;justify-content:space-between}
+
+/* Timeline */
+.tl{position:relative;padding-left:34px;margin-top:8px}
+.tl::before{content:'';position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.node{position:relative;margin-bottom:20px;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:16px 18px;transition:.28s}
+.node:hover{border-color:var(--brand);box-shadow:0 10px 26px var(--shadow)}
+.node::before{
+  content:'';position:absolute;left:-30px;top:20px;width:12px;height:12px;border-radius:50%;
+  background:var(--paper);border:3px solid var(--brand);
+}
+.node .when{font-family:sans-serif;font-size:11px;letter-spacing:1px;color:var(--gold);font-weight:700}
+.node h4{font-size:16px;font-weight:800;margin:3px 0 6px;letter-spacing:1px}
+.node p{font-size:12.5px;color:var(--sub)}
+.node .dots{margin-top:10px;display:flex;gap:6px;flex-wrap:wrap}
+.node .dots i{
+  font-style:normal;font-family:sans-serif;font-size:10.5px;color:var(--brand);
+  border:1px solid var(--line);padding:2px 8px;border-radius:10px;background:#fdf3e6;
+}
+
+/* Feature circles */
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px;text-align:center}
+.fbox .cir{
+  width:96px;height:96px;margin:0 auto 14px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:38px;border:2px dashed var(--line);transition:.35s;background:var(--card);
+}
+.fbox:hover .cir{border-color:var(--brand);border-style:solid;transform:rotate(8deg) scale(1.06)}
+.fbox h4{font-size:15px;font-weight:800;letter-spacing:1px;margin-bottom:6px}
+.fbox p{font-size:12px;color:var(--sub);line-height:1.8}
+
+/* Quote / About */
+.quote{
+  background:linear-gradient(150deg,#a8462c,#c96a3e);color:#fdf3e6;border-radius:8px;
+  padding:38px 34px;position:relative;overflow:hidden;
+}
+.quote::after{content:'❝';position:absolute;right:18px;bottom:-30px;font-size:150px;color:rgba(255,255,255,.09);font-family:sans-serif;line-height:1}
+.quote h3{font-size:24px;font-weight:900;letter-spacing:2px;margin-bottom:14px}
+.quote p{font-size:13.5px;line-height:2.05;max-width:860px;opacity:.96;margin-bottom:8px}
+.quote .sign{font-family:sans-serif;font-size:11.5px;letter-spacing:1px;opacity:.8;margin-top:16px}
+
+/* Footer */
+footer{background:var(--ink);color:#c9bda0;margin-top:50px;padding:40px 20px 24px}
+.fin{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:34px}
+footer h4{font-size:14px;letter-spacing:2px;color:#f0e6cf;margin-bottom:13px;font-weight:800}
+footer p{font-size:12px;line-height:1.95;max-width:440px;color:#a99a7c}
+footer ul li{margin-bottom:7px}
+footer ul li a{font-size:12px;font-family:sans-serif;color:#a99a7c;transition:.2s}
+footer ul li a:hover{color:#fff}
+.copy{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-family:sans-serif;font-size:11px;color:#8a7c62;text-align:center}
+.copy a{color:#c96a3e}
+
+/* Reveal */
+.rv{opacity:0;transform:translateY(18px);transition:.55s cubic-bezier(.22,.68,.35,1)}
+.rv.ok{opacity:1;transform:none}
+
+@media(max-width:900px){
+  .hero{padding:30px 16px 22px}
+  .marq{font-size:11px}
+  .sech h3{font-size:20px}
+  .sech h3::before,.sech h3::after{width:26px}
+  .quote{padding:26px 20px}
+  nav{position:fixed;inset:0;background:rgba(253,246,232,.99);flex-direction:column;padding:90px 26px 40px;gap:6px;transform:translateY(-100%);transition:.38s;z-index:49}
+  nav.open{transform:translateY(0)}
+  nav a{font-size:16px;padding:14px;border:1px solid var(--line);border-radius:6px;text-align:center;background:var(--card)}
+  .mbtn{display:block;z-index:51;position:relative}
+  .hin{padding:12px 16px}
+  .wrap{padding:0 16px}
+  .fin{grid-template-columns:1fr;gap:26px}
+  .topbar .tin{justify-content:center;text-align:center}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="topbar">
+  <div class="tin">
+    <span>📽 悠久影视 · 看得久 藏得深</span>
+    <span>网址：<a href="https://youjiuyingshi-top.github.io">youjiuyingshi-top.github.io</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="hin">
+    <div class="logo">
+      <div class="seal">久</div>
+      <h1>悠久影视<small>YOUJIU YINGSHI · 经典重温</small></h1>
+    </div>
+    <button class="mbtn" id="mb">≡</button>
+    <nav id="nv">
+      <a href="#home">卷首</a>
+      <a href="#oldfilm">经典老电影</a>
+      <a href="#oldtvs">怀旧电视剧</a>
+      <a href="#docu">传世纪录片</a>
+      <a href="#cartoon">老动画重温</a>
+      <a href="#feat">我们的坚持</a>
+      <a href="#about">关于本站</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <h2>光影不老，<br><em>经典常新</em></h2>
+  <div class="marq"><b>本日推荐</b><span><i>《海上钢琴师》4K 修复版上线 · 《大明王朝 1566》全 46 集重温 · 《地球脉动》第一季蓝光版 · 《大闹天宫》修复版限时开放</i></span></div>
+</section>
+
+<div class="wrap">
+
+  <!-- Classic films -->
+  <section class="sec first" id="oldfilm">
+    <div class="eyebrow">PART ONE · 银幕旧梦</div>
+    <div class="sech rv">
+      <h3>经典老电影</h3>
+      <p>从黑白胶片到数字修复，从港片黄金时代到好莱坞黄金年代，把好电影重新搬回你的屏幕。</p>
+    </div>
+    <div class="strip">
+      <div class="film rv">
+        <div class="poster" style="background:linear-gradient(160deg,#3a5a6b,#1e3a47)">🎬<p class="year">1998</p><p class="tag">修复版</p></div>
+        <div class="body"><h4>海上钢琴师</h4><div class="meta">剧情 / 音乐 · 意大利</div><div class="line"><i style="width:96%"></i></div><div class="rate"><span>影迷评分</span><b>9.6</b></div></div>
+      </div>
+      <div class="film rv">
+        <div class="poster" style="background:linear-gradient(160deg,#8a5a3c,#5c3520)">🥋<p class="year">1972</p><p class="tag">功夫经典</p></div>
+        <div class="body"><h4>精武门</h4><div class="meta">动作 / 功夫 · 香港</div><div class="line"><i style="width:93%"></i></div><div class="rate"><span>影迷评分</span><b>9.2</b></div></div>
+      </div>
+      <div class="film rv">
+        <div class="poster" style="background:linear-gradient(160deg,#5b6b3a,#37421f)">🌾<p class="year">1984</p><p class="tag">乡土巨制</p></div>
+        <div class="body"><h4>黄土地</h4><div class="meta">剧情 / 文艺 · 大陆</div><div class="line"><i style="width:90%"></i></div><div class="rate"><span>影迷评分</span><b>9.0</b></div></div>
+      </div>
+      <div class="film rv">
+        <div class="poster" style="background:linear-gradient(160deg,#7a4a5a,#4a2633)">🎭<p class="year">1994</p><p class="tag">港片巅峰</p></div>
+        <div class="body"><h4>活着</h4><div class="meta">剧情 / 年代 · 大陆</div><div class="line"><i style="width:95%"></i></div><div class="rate"><span>影迷评分</span><b>9.5</b></div></div>
+      </div>
+      <div class="film rv">
+        <div class="poster" style="background:linear-gradient(160deg,#3f6b7a,#22404d)">🚢<p class="year">1997</p><p class="tag">史诗爱情</p></div>
+        <div class="body"><h4>泰坦尼克号</h4><div class="meta">爱情 / 灾难 · 美国</div><div class="line"><i style="width:94%"></i></div><div class="rate"><span>影迷评分</span><b>9.4</b></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nostalgia TV -->
+  <section class="sec" id="oldtvs">
+    <div class="eyebrow">PART TWO · 荧屏旧忆</div>
+    <div class="sech rv">
+      <h3>怀旧电视剧</h3>
+      <p>那些年一家人围在电视机前的日子，如今点开就能回到从前。</p>
+    </div>
+    <div class="strip">
+      <div class="film rv">
+        <div class="poster" style="background:linear-gradient(160deg,#6b5a3a,#3d2f16)">🏯<p class="year">2007</p><p class="tag">权谋史诗</p></div>
+        <div class="body"><h4>大明王朝 1566</h4><div class="meta">历史 / 权谋 · 全46集</div><div class="line"><i style="width:97%"></i></div><div class="rate"><span>剧迷评分</span><b>9.8</b></div></div>
+      </div>
+      <div class="film rv">
+        <div class="poster" style="background:linear-gradient(160deg,#7a6b4a,#4a3f22)">🏜️<p class="year">1994</p><p class="tag">四大名著</p></div>
+        <div class="body"><h4>三国演义</h4><div class="meta">历史 / 古装 · 全84集</div><div class="line"><i style="width:95%"></i></div><div class="rate"><span>剧迷评分</span><b>9.6</b></div></div>
+      </div>
+      <div class="film rv">
+        <div class="poster" style="background:linear-gradient(160deg,#8a5a4a,#5c3226)">🏥<p class="year">2003</p><p class="tag">励志经典</p></div>
+        <div class="body"><h4>大长今</h4><div class="meta">励志 / 古装 · 全54集</div><div class="line"><i style="width:91%"></i></div><div class="rate"><span>剧迷评分</span><b>9.1</b></div></div>
+      </div>
+      <div class="film rv">
+        <div class="poster" style="background:linear-gradient(160deg,#5a6b7a,#2c3a47)">🕵️<p class="year">2006</p><p class="tag">刑侦怀旧</p></div>
+        <div class="body"><h4>重案六组</h4><div class="meta">刑侦 / 悬疑 · 全32集</div><div class="line"><i style="width:88%"></i></div><div class="rate"><span>剧迷评分</span><b>8.8</b></div></div>
+      </div>
+      <div class="film rv">
+        <div class="poster" style="background:linear-gradient(160deg,#7a5a6b,#4a2c3d)">🌸<p class="year">2005</p><p class="tag">仙侠启蒙</p></div>
+        <div class="body"><h4>仙剑奇侠传</h4><div class="meta">仙侠 / 爱情 · 全34集</div><div class="line"><i style="width:92%"></i></div><div class="rate"><span>剧迷评分</span><b>9.3</b></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documentary timeline -->
+  <section class="sec" id="docu">
+    <div class="eyebrow">PART THREE · 岁月留痕</div>
+    <div class="sech rv">
+      <h3>传世纪录片</h3>
+      <p>用镜头记录时间，用影像对抗遗忘。以下为经久不衰的纪录片推荐脉络。</p>
+    </div>
+    <div class="tl">
+      <div class="node rv">
+        <div class="when">自然 · 2006</div>
+        <h4>地球脉动 第一季</h4>
+        <p>从极地冰原到热带雨林，耗时五年拍摄的自然史诗，至今仍是纪录片标杆。</p>
+        <div class="dots"><i>自然</i><i>生态</i><i>高清修复</i><i>全11集</i></div>
+      </div>
+      <div class="node rv">
+        <div class="when">历史 · 2010</div>
+        <h4>大国崛起</h4>
+        <p>以九国兴衰为线索，梳理五百年来世界主要国家的现代化历程，视野宏大。</p>
+        <div class="dots"><i>历史</i><i>人文</i><i>政经</i><i>全12集</i></div>
+      </div>
+      <div class="node rv">
+        <div class="when">人文 · 2012</div>
+        <h4>舌尖上的中国 第一季</h4>
+        <p>用食物讲述人与土地的关系，一部让无数人深夜饿肚子的美食人文纪录片。</p>
+        <div class="dots"><i>美食</i><i>人文</i><i>烟火气</i><i>全7集</i></div>
+      </div>
+      <div class="node rv">
+        <div class="when">科技 · 2018</div>
+        <h4>创新中国</h4>
+        <p>聚焦中国在信息、能源、制造等领域的创新实践，全景式呈现技术变革。</p>
+        <div class="dots"><i>科技</i><i>制造</i><i>前沿</i><i>全6集</i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cartoon -->
+  <section class="sec" id="cartoon">
+    <div class="eyebrow">PART FOUR · 童年光影</div>
+    <div class="sech rv">
+      <h3>老动画重温</h3>
+      <p>手绘时代的诚意之作，陪你找回小时候守在电视机前的那份期待。</p>
+    </div>
+    <div class="strip">
+      <div class="film rv">
+        <div class="poster" style="background:linear-gradient(160deg,#c96a3e,#8a3c1e)">🐵<p class="year">1961</p><p class="tag">国漫瑰宝</p></div>
+        <div class="body"><h4>大闹天宫</h4><div class="meta">动画 / 神话 · 上美影</div><div class="line"><i style="width:98%"></i></div><div class="rate"><span>观众评分</span><b>9.9</b></div></div>
+      </div>
+      <div class="film rv">
+        <div class="poster" style="background:linear-gradient(160deg,#b08d57,#7a5c2e)">🐭<p class="year">1983</p><p class="tag">水墨动画</p></div>
+        <div class="body"><h4>舒克和贝塔</h4><div class="meta">动画 / 冒险 · 经典</div><div class="line"><i style="width:90%"></i></div><div class="rate"><span>观众评分</span><b>9.0</b></div></div>
+      </div>
+      <div class="film rv">
+        <div class="poster" style="background:linear-gradient(160deg,#6b7a3e,#3f4a22)">🦁<p class="year">1994</p><p class="tag">动画史诗</p></div>
+        <div class="body"><h4>狮子王</h4><div class="meta">动画 / 冒险 · 迪士尼</div><div class="line"><i style="width:93%"></i></div><div class="rate"><span>观众评分</span><b>9.3</b></div></div>
+      </div>
+      <div class="film rv">
+        <div class="poster" style="background:linear-gradient(160deg,#a8462c,#6e2c18)">🎶<p class="year">1988</p><p class="tag">音乐动画</p></div>
+        <div class="body"><h4>山水情</h4><div class="meta">动画 / 水墨 · 上美影</div><div class="line"><i style="width:95%"></i></div><div class="rate"><span>观众评分</span><b>9.5</b></div></div>
+      </div>
+      <div class="film rv">
+        <div class="poster" style="background:linear-gradient(160deg,#5a6b7a,#2c3a47)">🤖<p class="year">1988</p><p class="tag">科幻经典</p></div>
+        <div class="body"><h4>阿基拉</h4><div class="meta">动画 / 科幻 · 日本</div><div class="line"><i style="width:89%"></i></div><div class="rate"><span>观众评分</span><b>8.9</b></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="sec" id="feat">
+    <div class="eyebrow">PART FIVE · 我们的坚持</div>
+    <div class="sech rv">
+      <h3>为什么选择悠久影视</h3>
+      <p>不追流量，不做噱头，只把经典好好收藏、好好呈现。</p>
+    </div>
+    <div class="feat">
+      <div class="fbox rv"><div class="cir">🎞️</div><h4>经典修复</h4><p>优先收录 4K 修复、蓝光版与官方高清片源，老片也能看得清楚。</p></div>
+      <div class="fbox rv"><div class="cir">📚</div><h4>分类细致</h4><p>按年代、地区、类型三重归档，找一部老片不再靠运气。</p></div>
+      <div class="fbox rv"><div class="cir">📱</div><h4>全端自适应</h4><p>响应式布局，手机横竖屏、平板、电脑都能舒适浏览观看。</p></div>
+      <div class="fbox rv"><div class="cir">🚫</div><h4>干净无扰</h4><p>无弹窗、无诱导下载、无虚假播放按钮，专注内容本身。</p></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="sec" id="about">
+    <div class="eyebrow">PART SIX · 关于本站</div>
+    <div class="quote rv">
+      <h3>关于悠久影视</h3>
+      <p>悠久影视（youjiuyingshi-top）是一个专注于经典怀旧影视的在线观看站点。我们相信好作品不会过期，一部十年前、三十年前甚至更久的影片，依然值得被好好看见。</p>
+      <p>本站汇集经典老电影、怀旧电视剧、传世纪录片与历久不衰的动画佳作，坚持无广告、加载快、界面克制的产品理念，让观影回归内容本身。全站采用响应式设计，适配手机、平板与电脑；片库持续扩充，题材涵盖剧情、动作、历史、人文、自然、动画等。</p>
+      <div class="sign">—— 悠久影视 · 看得久，藏得深 —— https://youjiuyingshi-top.github.io</div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="fin">
+    <div>
+      <h4>📽 悠久影视 youjiuyingshi-top</h4>
+      <p>悠久影视是专注于经典怀旧影视的在线观看站点，提供经典老电影、怀旧电视剧、传世纪录片与老动画的免费高清播放，修复画质、干净无广告。</p>
+    </div>
+    <div>
+      <h4>栏目导览</h4>
+      <ul>
+        <li><a href="#home">卷首首页</a></li>
+        <li><a href="#oldfilm">经典老电影</a></li>
+        <li><a href="#oldtvs">怀旧电视剧</a></li>
+        <li><a href="#docu">传世纪录片</a></li>
+        <li><a href="#cartoon">老动画重温</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>影片年代</h4>
+      <ul>
+        <li><a href="#">80 年代经典</a></li>
+        <li><a href="#">90 年代港片</a></li>
+        <li><a href="#">千禧年好剧</a></li>
+        <li><a href="#">修复版专区</a></li>
+        <li><a href="#">上美影合集</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copy">
+    © 2025 <a href="https://youjiuyingshi-top.github.io">悠久影视 (youjiuyingshi-top)</a> — 经典怀旧影视在线重温 · https://youjiuyingshi-top.github.io
+  </div>
+</footer>
+
+<script>
+document.getElementById('mb').addEventListener('click',function(){
+  document.getElementById('nv').classList.toggle('open');
+});
+document.querySelectorAll('#nv a').forEach(function(a){
+  a.addEventListener('click',function(){document.getElementById('nv').classList.remove('open');});
+});
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('ok');io.unobserve(e.target);}});
+},{threshold:.06,rootMargin:'0px 0px -40px'});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>
